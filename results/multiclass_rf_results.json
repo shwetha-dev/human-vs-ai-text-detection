@@ -1,0 +1,101 @@
+{
+    "experiment": "mGPT Entropy + Random Forest",
+    "task": "10-class classification",
+    "feature": "Mean token-level predictive entropy",
+    "model": "Random Forest",
+    "best_parameters": {
+        "n_estimators": 300,
+        "min_samples_split": 6,
+        "min_samples_leaf": 3,
+        "max_features": "sqrt",
+        "max_depth": null,
+        "criterion": "gini",
+        "bootstrap": true
+    },
+    "validation": {
+        "accuracy": 0.1258,
+        "macro_f1": 0.1227,
+        "weighted_f1": 0.1228
+    },
+    "test": {
+        "accuracy": 0.1296411856474259,
+        "macro_f1": 0.1282868228742612,
+        "weighted_f1": 0.1285528438258724,
+        "balanced_accuracy": 0.12934246280342696,
+        "classification_report": {
+            "human": {
+                "precision": 0.11308562197092084,
+                "recall": 0.10802469135802469,
+                "f1-score": 0.11049723756906077,
+                "support": 648.0
+            },
+            "llama3_1b": {
+                "precision": 0.11015490533562823,
+                "recall": 0.10561056105610561,
+                "f1-score": 0.10783487784330244,
+                "support": 606.0
+            },
+            "llama3_3b": {
+                "precision": 0.10158730158730159,
+                "recall": 0.10110584518167456,
+                "f1-score": 0.10134600158353127,
+                "support": 633.0
+            },
+            "llama3_8b": {
+                "precision": 0.10017574692442882,
+                "recall": 0.08823529411764706,
+                "f1-score": 0.09382716049382717,
+                "support": 646.0
+            },
+            "mistral7b_v1": {
+                "precision": 0.11004784688995216,
+                "recall": 0.10832025117739404,
+                "f1-score": 0.10917721518987342,
+                "support": 637.0
+            },
+            "mistral7b_v2": {
+                "precision": 0.27461858529819694,
+                "recall": 0.3050847457627119,
+                "f1-score": 0.28905109489051095,
+                "support": 649.0
+            },
+            "mistral7b_v3": {
+                "precision": 0.11145038167938931,
+                "recall": 0.11265432098765432,
+                "f1-score": 0.11204911742133537,
+                "support": 648.0
+            },
+            "qwen3_14b": {
+                "precision": 0.11304347826086956,
+                "recall": 0.12018489984591679,
+                "f1-score": 0.11650485436893204,
+                "support": 649.0
+            },
+            "qwen3_4b": {
+                "precision": 0.10449927431059507,
+                "recall": 0.11128284389489954,
+                "f1-score": 0.10778443113772455,
+                "support": 647.0
+            },
+            "qwen3_8b": {
+                "precision": 0.13672496025437203,
+                "recall": 0.13292117465224113,
+                "f1-score": 0.13479623824451412,
+                "support": 647.0
+            },
+            "accuracy": 0.1296411856474259,
+            "macro avg": {
+                "precision": 0.12753881025116548,
+                "recall": 0.12934246280342696,
+                "f1-score": 0.1282868228742612,
+                "support": 6410.0
+            },
+            "weighted avg": {
+                "precision": 0.12777484163790984,
+                "recall": 0.1296411856474259,
+                "f1-score": 0.1285528438258724,
+                "support": 6410.0
+            }
+        }
+    }
+}
