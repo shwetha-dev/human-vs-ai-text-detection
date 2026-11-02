@@ -1,7 +1,7 @@
 
 # Human vs AI-Generated Text Detection
 
-## Experiment: mGPT Entropy + Random Forest
+## Experiment:Entropy + Random Forest
 
 ### Objective
 10-class classification of human-written and AI-generated text.
